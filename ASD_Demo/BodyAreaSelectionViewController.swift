@@ -13,6 +13,8 @@ class BodyAreaSelectionViewController: UIViewController, UIPickerViewDataSource,
     var pickerDataSource = ["Tummy", "Ears", "Head", "Neck", "Arms", "Legs"]
     var pickerDataColors = ["Tummy", "Ears", "Head", "Neck", "Arms", "Legs"]
     
+    var choice: String = ""
+    
     @IBOutlet weak var pickerView: UIPickerView!
     
     @IBOutlet weak var bodyPartBlock: UIButton!
@@ -30,6 +32,9 @@ class BodyAreaSelectionViewController: UIViewController, UIPickerViewDataSource,
         // Dispose of any resources that can be recreated.
     }
     
+    func getSelection() -> String {
+        return choice
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -47,5 +52,10 @@ class BodyAreaSelectionViewController: UIViewController, UIPickerViewDataSource,
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         bodyPartBlock.setTitle(pickerDataSource[row], for: UIControlState.normal)
+        choice = pickerDataSource[row]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        DTO.dto.setBodyPartChoice(choice: choice)
     }
 }

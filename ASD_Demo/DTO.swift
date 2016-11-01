@@ -19,6 +19,4 @@ class DTO
     func getBodyPartChoice() -> String {
         return self.bodyPartChoice
     }
-    
-    
 }

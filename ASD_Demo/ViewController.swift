@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     var imagePicker: UIImagePickerController!
+    var isImageLoaded = false;
     
     @IBOutlet var imageView: UIImageView!
     
@@ -24,7 +25,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        loadPhoto()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,11 +34,25 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         // Dispose of any resources that can be recreated.
     }
     
+    func loadPhoto() {
+        if (DTO.dto.getImage() != nil) {
+            self.imageView!.image = DTO.dto.getImage()!
+            self.imageView!.layer.frame = self.imageView!.layer.frame.insetBy(dx: 0, dy: 0)
+            self.imageView!.layer.borderColor = UIColor.gray.cgColor
+            self.imageView!.layer.cornerRadius = self.imageView!.frame.height / 2
+            self.imageView!.layer.masksToBounds = false
+            self.imageView!.clipsToBounds = true
+            self.imageView!.layer.borderWidth = 0.5
+            self.imageView!.contentMode = UIViewContentMode.scaleAspectFill
+        }
+        
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
-        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+
+        DTO.dto.setImage(image: info[UIImagePickerControllerOriginalImage] as? UIImage )
+        loadPhoto()
     }
-
-
 }
 

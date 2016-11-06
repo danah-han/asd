@@ -13,6 +13,8 @@ class PickShirtViewController: UIViewController, UIPickerViewDataSource, UIPicke
     var pickerDataSource = ["Red", "Green", "Blue", "White", "Grey"];
     var pickerDataColors = [UIColor.red, UIColor.green, UIColor.blue, UIColor.white, UIColor.gray]
     
+    var choice = " "
+    
     @IBOutlet weak var shirtColors: UIPickerView!
     @IBOutlet weak var colorBlock: UIButton!
     
@@ -46,5 +48,10 @@ class PickShirtViewController: UIViewController, UIPickerViewDataSource, UIPicke
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         colorBlock.backgroundColor = pickerDataColors[row]
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        DTO.dto.setShirtColor(choice: choice)
     }
 }

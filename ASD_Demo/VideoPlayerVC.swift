@@ -7,8 +7,14 @@ class VideoPlayerVC: UIViewController {
     private var firstAppear = true
     public var choice = ""
     
+    @IBOutlet weak var choiceLabel: UILabel!
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        choiceLabel.text = DTO.dto.getBodyPartChoice()
+        
         if firstAppear {
             do {
                 var videoName = ""

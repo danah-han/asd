@@ -10,32 +10,34 @@ import UIKit
 
 class FeelingSelectionViewController: UIViewController {
     
-    
-    @IBOutlet weak var feelingBlock: UIButton!
+    @IBOutlet weak var answer: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     @IBAction func happyClick(_ sender: AnyObject) {
-        feelingBlock.setTitle("😃", for: UIControlState.normal)
+        answer.text = "Happy (technically)"
     }
     
     @IBAction func sadClick(_ sender: AnyObject) {
-        feelingBlock.setTitle("😢", for: UIControlState.normal)
+        answer.text = "Sad"
     }
     
     @IBAction func madClick(_ sender: AnyObject) {
-        feelingBlock.setTitle("😡", for: UIControlState.normal)
+        answer.text = "Mad"
     }
     
     @IBAction func tenseClick(_ sender: AnyObject) {
-        feelingBlock.setTitle("😑", for: UIControlState.normal)
+        answer.text = "Tense"
     }
     
     @IBAction func tiredClick(_ sender: AnyObject) {
-        feelingBlock.setTitle("😴", for: UIControlState.normal)
+        answer.text = "Silly"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        nameLabel.text = DTO.dto.getName() + "?"
     
     }
     

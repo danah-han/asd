@@ -31,5 +31,12 @@ class GotAStarVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "backToBodyPartPickerSegue") {
+            let vc = segue.destination as! PickBodyPartVC
+            vc.isSwitching = true;
+        }
+    }
 
 }

@@ -12,6 +12,7 @@ class DTO
     var feelingSelectionChoice = ""
     var name = ""
     var image : UIImage? = nil
+    var numberOfStarsEarned = 0;
     
     init() { }
     

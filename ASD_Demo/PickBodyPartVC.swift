@@ -41,6 +41,8 @@ class PickBodyPartVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // Revisiting the view
         if (isSwitching) {
             topLabel.text = "Let's do another one!"
             repeatLabel.isHidden = false

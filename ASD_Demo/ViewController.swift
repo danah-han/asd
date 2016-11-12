@@ -21,7 +21,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         imagePicker.sourceType = .camera
         
         present(imagePicker, animated: true, completion: nil)
-    }
+    } 
+    
+    let transitionManager = TransitionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +55,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
         DTO.dto.setImage(image: info[UIImagePickerControllerOriginalImage] as? UIImage )
         loadPhoto()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let toViewController = segue.destination as UIViewController
+        toViewController.transitioningDelegate = self.transitionManager
+    }
+    
+    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
+        
     }
 }
 

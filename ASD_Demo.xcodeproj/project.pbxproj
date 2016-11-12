@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D3AFEC71DD28E7A0063440E /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AFEC61DD28E7A0063440E /* TransitionManager.swift */; };
 		9D4C74361DCF996C00675C7C /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C74351DCF996C00675C7C /* GetStartedViewController.swift */; };
 		9D4C74381DCF9BB600675C7C /* StarsPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C74371DCF9BB600675C7C /* StarsPageVC.swift */; };
 		9D4C743A1DCF9D2F00675C7C /* ProgressPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C74391DCF9D2F00675C7C /* ProgressPageVC.swift */; };
@@ -19,9 +20,6 @@
 		9DB8BA611DAD327900F3BF0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8BA5F1DAD327900F3BF0C /* Main.storyboard */; };
 		9DB8BA631DAD327900F3BF0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8BA621DAD327900F3BF0C /* Assets.xcassets */; };
 		9DB8BA661DAD327900F3BF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8BA641DAD327900F3BF0C /* LaunchScreen.storyboard */; };
-		9DB8BA6E1DAD3A5500F3BF0C /* PickShirtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8BA6D1DAD3A5500F3BF0C /* PickShirtViewController.swift */; };
-		9DB8BA701DAD3E7B00F3BF0C /* PickSkinColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8BA6F1DAD3E7B00F3BF0C /* PickSkinColorViewController.swift */; };
-		9DB8BA721DAD412300F3BF0C /* GenderSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8BA711DAD412300F3BF0C /* GenderSelectionViewController.swift */; };
 		9DB8BA751DAD44EE00F3BF0C /* BodyAreaSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8BA741DAD44EE00F3BF0C /* BodyAreaSelectionViewController.swift */; };
 		9DB8BA771DAD4AE600F3BF0C /* FeelingSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8BA761DAD4AE600F3BF0C /* FeelingSelectionViewController.swift */; };
 		9DC2D4AE1DC9504800918E91 /* Midnight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DC2D4AD1DC94CA600918E91 /* Midnight-Regular.ttf */; };
@@ -37,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D3AFEC61DD28E7A0063440E /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		9D4C74351DCF996C00675C7C /* GetStartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
 		9D4C74371DCF9BB600675C7C /* StarsPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsPageVC.swift; sourceTree = "<group>"; };
 		9D4C74391DCF9D2F00675C7C /* ProgressPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressPageVC.swift; sourceTree = "<group>"; };
@@ -51,9 +50,6 @@
 		9DB8BA621DAD327900F3BF0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB8BA651DAD327900F3BF0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DB8BA671DAD327900F3BF0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DB8BA6D1DAD3A5500F3BF0C /* PickShirtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickShirtViewController.swift; sourceTree = "<group>"; };
-		9DB8BA6F1DAD3E7B00F3BF0C /* PickSkinColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickSkinColorViewController.swift; sourceTree = "<group>"; };
-		9DB8BA711DAD412300F3BF0C /* GenderSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderSelectionViewController.swift; sourceTree = "<group>"; };
 		9DB8BA741DAD44EE00F3BF0C /* BodyAreaSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyAreaSelectionViewController.swift; sourceTree = "<group>"; };
 		9DB8BA761DAD4AE600F3BF0C /* FeelingSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingSelectionViewController.swift; sourceTree = "<group>"; };
 		9DC2D4AD1DC94CA600918E91 /* Midnight-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Midnight-Regular.ttf"; sourceTree = "<group>"; };
@@ -61,7 +57,7 @@
 		9DCC5BE81DC948BB00DEF8E1 /* GetUserNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserNameViewController.swift; sourceTree = "<group>"; };
 		9DEFC6AD1DB6D222006F833A /* Armz.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Armz.mp4; sourceTree = "<group>"; };
 		9DEFC6AE1DB6D252006F833A /* VideoPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerVC.swift; sourceTree = "<group>"; };
-		9DEFC6B11DB6DDBC006F833A /* DTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		9DEFC6B11DB6DDBC006F833A /* DTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DTO.swift; path = ASD_Demo/DTO.swift; sourceTree = "<group>"; };
 		9DEFC6B31DB6E2C6006F833A /* Neck.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neck.mp4; sourceTree = "<group>"; };
 		9DEFC6B41DB6E2D9006F833A /* Ears.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ears.mp4; sourceTree = "<group>"; };
 		9DEFC6B51DB6E2E6006F833A /* Tummy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tummy.mp4; sourceTree = "<group>"; };
@@ -82,6 +78,8 @@
 		9DB8BA4F1DAD327900F3BF0C = {
 			isa = PBXGroup;
 			children = (
+				9D3AFEC61DD28E7A0063440E /* TransitionManager.swift */,
+				9DEFC6B11DB6DDBC006F833A /* DTO.swift */,
 				9DB8BA5A1DAD327900F3BF0C /* ASD_Demo */,
 				9DB8BA591DAD327900F3BF0C /* Products */,
 			);
@@ -102,13 +100,6 @@
 				9DB8BA5D1DAD327900F3BF0C /* ViewController.swift */,
 				9DB8BA731DAD44D000F3BF0C /* Selection Views */,
 				9DB8BA5F1DAD327900F3BF0C /* Main.storyboard */,
-				9D4C74411DCFAAFD00675C7C /* CompletedVideoVC.swift */,
-				9D4C743F1DCFA96200675C7C /* GotAStarVC.swift */,
-				9D4C743D1DCFA54100675C7C /* PickBodyPartVC.swift */,
-				9DC2D4AF1DC9549900918E91 /* StretchScreenViewController.swift */,
-				9D4C743B1DCFA1ED00675C7C /* HowAreYouFeelingVC.swift */,
-				9D4C74391DCF9D2F00675C7C /* ProgressPageVC.swift */,
-				9D4C74371DCF9BB600675C7C /* StarsPageVC.swift */,
 				9DEFC6B51DB6E2E6006F833A /* Tummy.mp4 */,
 				9DEFC6B61DB6E2F5006F833A /* Legs.mp4 */,
 				9DEFC6AD1DB6D222006F833A /* Armz.mp4 */,
@@ -118,7 +109,6 @@
 				9DB8BA621DAD327900F3BF0C /* Assets.xcassets */,
 				9DB8BA641DAD327900F3BF0C /* LaunchScreen.storyboard */,
 				9DB8BA671DAD327900F3BF0C /* Info.plist */,
-				9DEFC6B11DB6DDBC006F833A /* DTO.swift */,
 			);
 			path = ASD_Demo;
 			sourceTree = "<group>";
@@ -126,10 +116,14 @@
 		9DB8BA731DAD44D000F3BF0C /* Selection Views */ = {
 			isa = PBXGroup;
 			children = (
+				9D4C74411DCFAAFD00675C7C /* CompletedVideoVC.swift */,
+				9D4C743F1DCFA96200675C7C /* GotAStarVC.swift */,
+				9D4C743D1DCFA54100675C7C /* PickBodyPartVC.swift */,
+				9DC2D4AF1DC9549900918E91 /* StretchScreenViewController.swift */,
+				9D4C743B1DCFA1ED00675C7C /* HowAreYouFeelingVC.swift */,
+				9D4C74391DCF9D2F00675C7C /* ProgressPageVC.swift */,
+				9D4C74371DCF9BB600675C7C /* StarsPageVC.swift */,
 				9DCC5BE81DC948BB00DEF8E1 /* GetUserNameViewController.swift */,
-				9DB8BA6D1DAD3A5500F3BF0C /* PickShirtViewController.swift */,
-				9DB8BA6F1DAD3E7B00F3BF0C /* PickSkinColorViewController.swift */,
-				9DB8BA711DAD412300F3BF0C /* GenderSelectionViewController.swift */,
 				9DB8BA741DAD44EE00F3BF0C /* BodyAreaSelectionViewController.swift */,
 				9DB8BA761DAD4AE600F3BF0C /* FeelingSelectionViewController.swift */,
 				9DEFC6AE1DB6D252006F833A /* VideoPlayerVC.swift */,
@@ -217,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3AFEC71DD28E7A0063440E /* TransitionManager.swift in Sources */,
 				9D4C743C1DCFA1ED00675C7C /* HowAreYouFeelingVC.swift in Sources */,
 				9DC2D4B01DC9549900918E91 /* StretchScreenViewController.swift in Sources */,
 				9D4C74381DCF9BB600675C7C /* StarsPageVC.swift in Sources */,
@@ -227,12 +222,9 @@
 				9DB8BA771DAD4AE600F3BF0C /* FeelingSelectionViewController.swift in Sources */,
 				9DEFC6B21DB6DDBC006F833A /* DTO.swift in Sources */,
 				9DEFC6AF1DB6D252006F833A /* VideoPlayerVC.swift in Sources */,
-				9DB8BA6E1DAD3A5500F3BF0C /* PickShirtViewController.swift in Sources */,
-				9DB8BA701DAD3E7B00F3BF0C /* PickSkinColorViewController.swift in Sources */,
 				9D4C743A1DCF9D2F00675C7C /* ProgressPageVC.swift in Sources */,
 				9DB8BA5C1DAD327900F3BF0C /* AppDelegate.swift in Sources */,
 				9D4C74421DCFAAFD00675C7C /* CompletedVideoVC.swift in Sources */,
-				9DB8BA721DAD412300F3BF0C /* GenderSelectionViewController.swift in Sources */,
 				9D4C74401DCFA96200675C7C /* GotAStarVC.swift in Sources */,
 				9DCC5BE91DC948BB00DEF8E1 /* GetUserNameViewController.swift in Sources */,
 			);

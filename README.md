@@ -1,4 +1,4 @@
-# Project Name
+# Self-training for ASD
 
 TODO: 
 - short project description

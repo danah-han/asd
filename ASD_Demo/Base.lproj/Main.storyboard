@@ -719,7 +719,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFK-uV-0RY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2132" y="954.87256371814101"/>
+            <point key="canvasLocation" x="2044" y="955"/>
         </scene>
         <!--Pick Body PartVC-->
         <scene sceneID="Boy-5m-rfR">
@@ -742,14 +742,6 @@
                                 <connections>
                                     <action selector="touchHead:" destination="3VB-Q4-1IK" eventType="touchUpInside" id="cVY-vV-Snm"/>
                                     <segue destination="rQW-N8-xvS" kind="show" id="qZN-GW-qRF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSZ-h0-072">
-                                <rect key="frame" x="277" y="220" width="63" height="59"/>
-                                <state key="normal" image="bodyPartStar"/>
-                                <connections>
-                                    <action selector="touchRightArm:" destination="3VB-Q4-1IK" eventType="touchUpInside" id="EZg-iY-tn4"/>
-                                    <segue destination="rQW-N8-xvS" kind="show" id="4q1-sD-5tY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzR-49-IKh">
@@ -826,7 +818,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kx2-mc-lRF">
-                                <rect key="frame" x="265" y="357" width="58" height="21"/>
+                                <rect key="frame" x="265" y="360" width="58" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="58" id="wgv-GR-O5W"/>
                                 </constraints>
@@ -855,7 +847,6 @@
                             <constraint firstItem="Fgw-rl-Vip" firstAttribute="top" secondItem="SfX-nq-6cU" secondAttribute="bottom" constant="31" id="Kxy-QB-Wde"/>
                             <constraint firstItem="RVD-ix-5Jr" firstAttribute="leading" secondItem="NEn-Hq-NUX" secondAttribute="leadingMargin" constant="69" id="Ngk-Bd-rNK"/>
                             <constraint firstItem="RVD-ix-5Jr" firstAttribute="top" secondItem="KDO-yM-Ybp" secondAttribute="bottom" constant="68" id="Vyw-wo-KQK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jSZ-h0-072" secondAttribute="trailing" constant="19" id="YCU-Yg-zqs"/>
                             <constraint firstItem="Kx2-mc-lRF" firstAttribute="leading" secondItem="xJO-hR-jTH" secondAttribute="leading" id="ZuB-lJ-6bt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SfX-nq-6cU" secondAttribute="trailing" constant="-28" id="aFL-UT-98P"/>
                             <constraint firstItem="4Cw-r8-KfH" firstAttribute="top" secondItem="RVD-ix-5Jr" secondAttribute="bottom" constant="8" symbolic="YES" id="cS7-Om-krG"/>
@@ -863,10 +854,8 @@
                             <constraint firstItem="086-ed-LJ1" firstAttribute="leading" secondItem="NEn-Hq-NUX" secondAttribute="leading" id="chC-No-uFs"/>
                             <constraint firstItem="SfX-nq-6cU" firstAttribute="leading" secondItem="Fgw-rl-Vip" secondAttribute="leading" id="cxt-DA-G2j"/>
                             <constraint firstItem="RVD-ix-5Jr" firstAttribute="leading" secondItem="086-ed-LJ1" secondAttribute="trailing" constant="13" id="fCk-L9-TbQ"/>
-                            <constraint firstItem="SfX-nq-6cU" firstAttribute="top" secondItem="jSZ-h0-072" secondAttribute="bottom" constant="68" id="le0-mH-sH2"/>
                             <constraint firstItem="4Cw-r8-KfH" firstAttribute="top" secondItem="xJO-hR-jTH" secondAttribute="bottom" constant="219" id="obt-16-oBE"/>
                             <constraint firstItem="yt6-9U-1hX" firstAttribute="leading" secondItem="GzR-49-IKh" secondAttribute="trailing" constant="29" id="qg1-h1-z4n"/>
-                            <constraint firstItem="Kx2-mc-lRF" firstAttribute="top" secondItem="jSZ-h0-072" secondAttribute="bottom" constant="78" id="v88-E1-PsX"/>
                             <constraint firstItem="Fgw-rl-Vip" firstAttribute="top" secondItem="Kx2-mc-lRF" secondAttribute="bottom" constant="39" id="v9K-h7-QPw"/>
                         </constraints>
                     </view>
@@ -938,6 +927,9 @@
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="rightNav"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Y1V-Pm-DT0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqS-zh-ndm">
                                 <rect key="frame" x="0.0" y="620" width="72" height="39"/>
@@ -987,7 +979,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKp-PI-QMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3056.8000000000002" y="1788.7556221889056"/>
+            <point key="canvasLocation" x="3054" y="1932"/>
         </scene>
         <!--Video PlayerVC-->
         <scene sceneID="8Ve-zo-su3">
@@ -1147,9 +1139,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="w9z-tr-JSc"/>
-        <segue reference="hfR-Rq-9vl"/>
+        <segue reference="Tya-MD-wnd"/>
         <segue reference="LZg-3K-ZkR"/>
-        <segue reference="oHU-Dp-Qvb"/>
+        <segue reference="Y1V-Pm-DT0"/>
         <segue reference="lQU-id-3Kg"/>
     </inferredMetricsTieBreakers>
 </document>

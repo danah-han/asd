@@ -18,7 +18,9 @@ class PickBodyPartVC: UIViewController {
     @IBOutlet weak var allDoneButton: UIButton!
     
     
+    // Set isSwitching to false initially (the first visit)
     var isSwitching = false
+    
     
     @IBAction func touchHead(_ sender: Any) {
         UserState.sharedInstance.bodyPartChoice = "Head"
@@ -38,6 +40,7 @@ class PickBodyPartVC: UIViewController {
     @IBAction func touchRightLeg(_ sender: Any) {
         UserState.sharedInstance.bodyPartChoice = "Legs"
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,8 +61,6 @@ class PickBodyPartVC: UIViewController {
             allDoneLabel.isHidden = true
             allDoneButton.isHidden = true
         }
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

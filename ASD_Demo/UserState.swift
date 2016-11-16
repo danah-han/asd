@@ -7,8 +7,6 @@ class UserState
     static let sharedInstance = UserState()
     
     var bodyPartChoice = ""
-    var shirtColorChoice = ""
-    var skinColorChoice = ""
     var feelingSelectionChoice = ""
     var name = ""
     var image : UIImage? = nil
@@ -34,23 +32,7 @@ class UserState
     func getName() -> String {
         return self.name
     }
-    
-    func setShirtColor(choice: String) {
-        self.shirtColorChoice = choice
-    }
-    
-    func getShirtColorChoice() -> String {
-        return self.shirtColorChoice
-    }
-    
-    func setSkinColorChoice(choice: String) {
-        self.skinColorChoice = choice
-    }
-    
-    func getSkinColorChoice() -> String {
-        return self.skinColorChoice
-    }
-    
+ 
     func setFeelingSelectionChioce(choice: String) {
         self.feelingSelectionChoice = choice
     }

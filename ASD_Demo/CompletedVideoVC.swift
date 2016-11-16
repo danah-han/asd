@@ -8,6 +8,10 @@
 
 import UIKit
 
+
+/* TODO: Something should happen when the video is complete
+         (add stars, prompt user with activity, etc.)
+ */
 class CompletedVideoVC: UIViewController {
 
     override func viewDidLoad() {

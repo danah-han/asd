@@ -15,7 +15,7 @@ class HowAreYouFeelingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel.text = DTO.dto.getName()
+        nameLabel.text = UserState.sharedInstance.getName()
         // Do any additional setup after loading the view.
     }
 

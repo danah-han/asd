@@ -19,8 +19,8 @@ class GetUserNameViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         nameField.delegate = self
         
-        if (DTO.dto.getName() != "") {
-            nameLabel.text = "Hello, \(DTO.dto.getName())!"
+        if (UserState.sharedInstance.getName() != "") {
+            nameLabel.text = "Hello, \(UserState.sharedInstance.getName())!"
         }
     }
     
@@ -36,7 +36,7 @@ class GetUserNameViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         nameLabel.text = "Hello, \(nameField.text!)!"
-        DTO.dto.setName(choice: nameField.text!)
+        UserState.sharedInstance.setName(choice: nameField.text!)
     }
     
 

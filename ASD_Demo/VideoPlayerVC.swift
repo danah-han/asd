@@ -13,12 +13,12 @@ class VideoPlayerVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        choiceLabel.text = DTO.dto.getBodyPartChoice()
+        choiceLabel.text = UserState.sharedInstance.getBodyPartChoice()
         
         if firstAppear {
             do {
                 var videoName = ""
-                switch (DTO.dto.getBodyPartChoice()) {
+                switch (UserState.sharedInstance.getBodyPartChoice()) {
                     case "Tummy":
                         videoName = "Tummy"
                         break;
@@ -51,21 +51,21 @@ class VideoPlayerVC: UIViewController {
             }
         }
         
-        print(DTO.dto.getBodyPartChoice())
+        print(UserState.sharedInstance.getBodyPartChoice())
     }
     
     private func playVideo(videoTitle: String) throws {
         guard let path = Bundle.main.path(forResource: videoTitle, ofType:"mp4") else {
             throw AppError.InvalidResource(videoTitle, "mp4")
         }
-        let player = AVPlayer(url: NSURL(fileURLWithPath: path) as URL)
-        let playerController = AVPlayerViewController()
-        playerController.player = player
+        let videoPlayer = AVPlayer(url: NSURL(fileURLWithPath: path) as URL)
+        let videoController = AVPlayerViewController()
+        videoController.player = videoPlayer
         
-        playerController.view.frame = CGRect(origin: CGPoint(x: 0, y: self.view.bounds.height * 0.25), size: CGSize(width: self.view.frame.width, height: 300))
-        self.view.addSubview(playerController.view)
-        self.addChildViewController(playerController)
-        player.play()
+        videoController.view.frame = CGRect(origin: CGPoint(x: 0, y: self.view.bounds.height * 0.25), size: CGSize(width: self.view.frame.width, height: 300))
+        self.view.addSubview(videoController.view)
+        self.addChildViewController(videoController)
+        videoPlayer.play()
     }
 }
 

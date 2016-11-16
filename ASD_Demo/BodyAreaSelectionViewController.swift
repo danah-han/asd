@@ -56,6 +56,6 @@ class BodyAreaSelectionViewController: UIViewController, UIPickerViewDataSource,
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        DTO.dto.setBodyPartChoice(choice: choice)
+        UserState.sharedInstance.setBodyPartChoice(choice: choice)
     }
 }

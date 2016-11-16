@@ -37,7 +37,7 @@ class FeelingSelectionViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        nameLabel.text = DTO.dto.getName() + "?"
+        nameLabel.text = UserState.sharedInstance.getName() + "?"
     
     }
     

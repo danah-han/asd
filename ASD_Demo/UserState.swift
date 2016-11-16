@@ -2,9 +2,9 @@ import Foundation
 import UIKit
 
 
-class DTO
+class UserState
 {
-    static let dto = DTO()
+    static let sharedInstance = UserState()
     
     var bodyPartChoice = ""
     var shirtColorChoice = ""

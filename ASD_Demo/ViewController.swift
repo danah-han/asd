@@ -37,8 +37,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     func loadPhoto() {
-        if (DTO.dto.getImage() != nil) {
-            self.imageView!.image = DTO.dto.getImage()!
+        if (UserState.sharedInstance.getImage() != nil) {
+            self.imageView!.image = UserState.sharedInstance.getImage()!
             self.imageView!.layer.frame = self.imageView!.layer.frame.insetBy(dx: 0, dy: 0)
             self.imageView!.layer.borderColor = UIColor.gray.cgColor
             self.imageView!.layer.cornerRadius = self.imageView!.frame.height / 2
@@ -53,7 +53,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
 
-        DTO.dto.setImage(image: info[UIImagePickerControllerOriginalImage] as? UIImage )
+        UserState.sharedInstance.setImage(image: info[UIImagePickerControllerOriginalImage] as? UIImage )
         loadPhoto()
     }
     

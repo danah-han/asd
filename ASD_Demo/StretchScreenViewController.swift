@@ -15,7 +15,7 @@ class StrechScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        nameLabel.text = "like to stretch, \(DTO.dto.getName())?"
+        nameLabel.text = "like to stretch, \(UserState.sharedInstance.getName())?"
     }
     
     

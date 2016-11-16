@@ -12,7 +12,7 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
     
     // MARK: UIViewControllerAnimatedTransitioning protocol methods
     
-    // Custom animation goes here
+    // TODO: Custom animation goes here
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
     }

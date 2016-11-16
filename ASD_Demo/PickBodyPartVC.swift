@@ -21,22 +21,22 @@ class PickBodyPartVC: UIViewController {
     var isSwitching = false
     
     @IBAction func touchHead(_ sender: Any) {
-        DTO.dto.bodyPartChoice = "Head"
+        UserState.sharedInstance.bodyPartChoice = "Head"
     }
     @IBAction func touchTummy(_ sender: Any) {
-        DTO.dto.bodyPartChoice = "Tummy"
+        UserState.sharedInstance.bodyPartChoice = "Tummy"
     }
     @IBAction func touchRightArm(_ sender: Any) {
-        DTO.dto.bodyPartChoice = "Ears"
+        UserState.sharedInstance.bodyPartChoice = "Ears"
     }
     @IBAction func touchLeftArm(_ sender: Any) {
-        DTO.dto.bodyPartChoice = "Arms"
+        UserState.sharedInstance.bodyPartChoice = "Arms"
     }
     @IBAction func touchLeftLeg(_ sender: Any) {
-        DTO.dto.bodyPartChoice = "Legs"
+        UserState.sharedInstance.bodyPartChoice = "Legs"
     }
     @IBAction func touchRightLeg(_ sender: Any) {
-        DTO.dto.bodyPartChoice = "Legs"
+        UserState.sharedInstance.bodyPartChoice = "Legs"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
